@@ -1,5 +1,9 @@
 # Prosecution Legal RAG
 
+[![CI](https://github.com/ZhengjunSun/prosecution-legal-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhengjunSun/prosecution-legal-rag/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A citation-first legal research workflow that demonstrates retrieval, grounded drafting,
 source verification, uncertainty handling, and mandatory human review.
 
