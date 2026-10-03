@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prosecution-legal-rag"
+version = "0.1.0"
+description = "Citation-first legal RAG workflow using fictional demonstration materials"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "SunZhengjun"}]
+keywords = ["legal-rag", "multi-agent", "citation", "llm", "responsible-ai"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+legal-rag-demo = "legal_rag.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/legal_rag"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
